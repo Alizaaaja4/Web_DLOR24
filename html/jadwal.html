@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="icon" type="DLOR" href="/public/assets/homepage/LogoDlor24.jpg" />
+    <title>Venture the Deep Within</title>
+</head>
+<body class="bg-dark-dungeon bg-cover bg-fixed bg-no-repeat bg-center cursor-sword">
+    <!-- header start -->
+   <div class="container flex justify-between">
+    <!-- navbar start -->
+    <div class="sidebar fixed left-0 right-6 h-full w-[60px] bg-hijau-gelap bg-opacity-70  pr-12 pt-3 z-50 transition-all ease-in-out duration-700">
+        <div class="flex relative items-center">
+            <i class="absolute top-3 -right-11 cursor-pointer text-md" id="btn">
+                <img src="/public/assets/sidebar/navbar.png" alt="" class="h-[45px] w-[50px]"/>
+              </i>
+        </div>
+        <ul class="profile text-gray-dark font-enchanted mt-[80px] ml-3 h-full">
+            <div class="boxsidebar pb-4 m-2 text-2xl opacity-0 pointer-events-none">
+                <div class="mx-2 mt-2 md:my-4 font-semibold">
+                    <h1>ACCOUNT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">CHANGE PASSWORD</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">PROFILE</span>
+                    </a>
+                </li>
+
+                <div class="mx-2 mt-5 md:my-4 font-semibold">
+                    <h1>CONTACT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">OA LINE</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">ASSISTANT</span>
+                    </a>
+                </li>
+
+                <div class="mx-2 mt-5 md:my-4 font-semibold">
+                    <h1>RECRUITMENT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">GRADUATION</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">SCHEDULE</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">ROLE</span>
+                    </a>
+                </li>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-merah hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">LOGOUT</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- navbar ends -->
+    </div>
+    <!-- header ends -->
+
+    <!-- tabel jadwal start -->
+    <div class="container relative max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto py-[65px]"> 
+        <h1 class="judul-tabel text-white text-center text-5xl lg:text-4xl md:text-4xl sm:text-3xl font-ringbearer">Select a Schedule</h1>
+        
+        <div class="flex justify-center tracking-wide pt-12 px-4">
+            <table class="table-auto text-base md:text-sm sm:text-xs font-vinque">
+                <thead class="header">
+                    <tr class="tabel bg-dark text-fivedary">
+                        <th class="border border-butter px-4 py-1">NO</th>
+                        <th class="border border-butter px-4 py-1">SHIFTS</th>
+                        <th class="border border-butter px-6 py-1">HARI, TANGGAL</th>
+                        <th class="border border-butter px-4 py-1">WAKTU</th>
+                        <th class="border border-butter px-4 py-1">KUOTA</th>
+                        <th class="border border-butter px-4 py-1">OPSI</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-light text-fivedary table-auto">
+                    <tr>
+                        <th class="border border-butter px-4 py-1">1.</th>
+                        <th class="border border-butter px-4 py-1">Shifts 1</th>
+                        <th class="border border-butter px-6 py-1">3 Februari</th>
+                        <th class="border border-butter px-4 py-1">06.30 - 09.00</th>
+                        <th class="border border-butter px-4 py-1">12</th>
+                        <th class="border border-butter px-4 py-1">
+                            <button class="bg-dark hover:bg-gray-dark px-4 py-2 m-2 rounded-md">
+                             Pilih
+                            </button>
+                            </th>
+                    </tr>
+                    <tr>
+                        <th class="border border-butter px-4 py-1">2.</th>
+                        <th class="border border-butter px-4 py-1">Shifts 3</th>
+                        <th class="border border-butter px-6 py-1">3 Februari</th>
+                        <th class="border border-butter px-4 py-1">13.30 - 15.00</th>
+                        <th class="border border-butter px-4 py-1 text-butter">PENUH</th>
+                        <th class="border border-butter px-4 py-1">
+                            <button class="bg-gray-dark bg-blur px-4 py-2 m-2 rounded-md">
+                            Pilih
+                            </button>
+                            </th>
+                    </tr>  
+                    <tr>
+                        <th class="border border-butter px-4 py-1">3.</th>
+                        <th class="border border-butter px-4 py-1">Shifts 3</th>
+                        <th class="border border-butter px-6 py-1">12 Februari</th>
+                        <th class="border border-butter px-4 py-1">16.30 - 19.00</th>
+                        <th class="border border-butter px-4 py-1">5</th>
+                        <th class="border border-butter px-4 py-1">
+                            <button class="bg-dark hover:bg-gray-dark px-4 py-2 m-2 rounded-md">
+                            Pilih
+                            </button>
+                            </th>
+                    </tr>
+                    <tr>
+                        <th class="border border-butter px-4 py-1">4.</th>
+                        <th class="border border-butter px-4 py-1">Shifts 4</th>
+                        <th class="border border-butter px-6 py-1">21 Februari</th>
+                        <th class="border border-butter px-4 py-1">06.30 - 10.00</th>
+                        <th class="border border-butter px-4 py-1">8</th>
+                        <th class="border border-butter px-4 py-1">
+                            <button class="bg-dark hover:bg-gray-dark px-4 py-2 m-2 rounded-md">
+                            Pilih
+                            </button>
+                            </th>
+                    </tr> 
+                    <tr>
+                        <th class="border border-butter px-4 py-1">5.</th>
+                        <th class="border border-butter px-4 py-1">Shifts 4</th>
+                        <th class="border border-butter px-6 py-1">26 Februari</th>
+                        <th class="border border-butter px-4 py-1">13.30 - 15.00</th>
+                        <th class="border border-butter px-4 py-1 text-butter">PENUH</th>
+                        <th class="border border-butter px-4 py-1">
+                            <button class="bg-gray-dark bg-blur px-4 py-2 m-2 rounded-md">
+                            Pilih
+                            </button>
+                            </th>
+                    </tr>    
+                </tbody>
+            </table>
+        </div>
+        <div class="text-white font-vinque mt-10 flex justify-evenly">
+            <button class="bg-light hover:bg-dark px-5 sm:px-4 py-4 sm:py-3 text-xl sm:text-lg">
+                PREVIOUS
+            </button>
+            <button class="bg-light hover:bg-dark px-9 sm:px-8 py-4 sm:py-3 text-xl sm:text-lg">
+                NEXT
+            </button >
+        </div>
+    </div>
+    <!-- tabel jadwal ends -->
+
+    <!-- footer start -->
+    <footer class="absolute bottom-0 left-0 right-0 mt-3 mb-3 text-center">
+        <h1 class="font-bold lg:text-3xl font-ringbearer text-[#A37651] text-stroke shadow-secondary shadow-lg sm:text-2xl md:text-2xl">#Venture The Deep Within
+    </footer>
+    <!-- footer ends -->
+
+   <!-- script sidebar -->
+    <script src="/public/js/sidebar.js"></script>
+</body>
+
+</html>
