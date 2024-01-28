@@ -34,8 +34,11 @@
   .sidebar.open {
     width: 155px;
   }
+  .image-caas{
+    margin-top: 50px;
+  }
   .deskripsi {
-    margin-top: 450px;
+    margin-top: 10px;
   }
 
   /* halaman announcement */
