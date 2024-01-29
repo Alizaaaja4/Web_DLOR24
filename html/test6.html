@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    .owl-item img {
+      opacity: 0.5;
+    }
+    .owl-item.center img {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="owl-carousel" class="owl-carousel owl-theme">
+    <div class="item"><img src="/public/assets/assistants/assistantprofile.png" alt="Image 1"></div>
+    <div class="item"><img src="/public/assets/assistants/assistantprofile.png" alt="Image 2"></div>
+    <div class="item center"><img src="image3.jpg" alt="Image 3"></div>
+    <div class="item"><img src="image4.jpg" alt="Image 4"></div>
+    <div class="item"><img src="image5.jpg" alt="Image 5"></div>
+  </div>
+  <div class="owl-controls">
+    <div class="owl-prev"><i class="fa fa-chevron-left"></i></div>
+    <div class="owl-next"><i class="fa fa-chevron-right"></i></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#owl-carousel").owlCarousel({
+        items: 1,
+        center: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+      });
+    });
+  </script>
+</body>
+</html>

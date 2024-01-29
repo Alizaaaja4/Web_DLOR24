@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venture the Deep Within</title>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="icon" type="DLOR" href="/public/assets/homepage/LogoDlor24.jpg" />
+</head>
+<body class="bg-welcome-dungeon bg-cover bg-fixed bg-no-repeat bg-center cursor-sword">
+
+        <!-- header start -->
+   <div class="container flex justify-between">
+    <!-- navbar start -->
+    <div class="sidebar fixed left-0 right-6 h-full w-[60px] bg-hijau-gelap bg-opacity-70  pr-12 pt-3 z-50 transition-all ease-in-out duration-700">
+        <div class="flex relative items-center">
+            <i class="absolute top-3 -right-11 cursor-pointer text-md" id="btn">
+                <img src="/public/assets/sidebar/navbar.png" alt="" class="h-[45px] w-[50px]"/>
+              </i>
+        </div>
+        <ul class="profile text-gray-dark font-enchanted mt-[80px] ml-3 h-full">
+            <div class="boxsidebar pb-4 m-2 text-2xl opacity-0 pointer-events-none">
+                <div class="mx-2 mt-2 md:my-4 font-semibold">
+                    <h1>ACCOUNT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">CHANGE PASSWORD</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">PROFILE</span>
+                    </a>
+                </li>
+
+                <div class="mx-2 mt-5 md:my-4 font-semibold">
+                    <h1>CONTACT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">OA LINE</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">ASSISTANT</span>
+                    </a>
+                </li>
+
+                <div class="mx-2 mt-5 md:my-4 font-semibold">
+                    <h1>RECRUITMENT</h1>
+                </div>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">GRADUATION</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">SCHEDULE</span>
+                    </a>
+                </li>
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-green hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">ROLE</span>
+                    </a>
+                </li>
+
+                <li class="relative mt-2 p-1 list-none">
+                    <a href="#" class="border-2 justify-center text-secondary bg-gray-dark flex w-full h-10 md:h-12 rounded-full items-center no-underline shadow-md shadow-gray-dark hover:bg-transparent hover:shadow-merah hover:text-fivedary hover:font-semibold">
+                        <span class="text-sm whitespace-nowrap">LOGOUT</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- navbar ends -->
+    </div>
+    <!-- header ends -->
+
+    <div class="container relative max-w-2xl mx-auto py-4">
+        <div class="mt-[107px] flex justify-center">
+            <img src="/public/assets/caas/loginpaper.png" alt="" class="h-[530px] w-[400px]">
+        </div>
+     
+        <div class="absolute -top-0 left-0 right-0 text-center mt-[200px] z-10">
+            <div class="text-gray font-ringbearer -mb-16">
+                <h1 class="text-2xl">CHANGE PASSWORD</h1>
+                <P class="text-sm">Password Minimal 8 Karakter</P>
+            </div>
+            <form class="flex flex-col justify-around items-center h-3/5" action="/loginCaasPost" method="POST">
+                <div class="flex flex-col items-center justify-between font-ringbearer h-60 font-bold">
+                    <input type="text" placeholder="New Password" name="nim" id="nim" class="mt-36 w-60 h-16 text-graymid border-b-gray-700 border-b-2 bg-transparent focus:outline-none invalid:border-b-gray-500 text-sm text-center placeholder:text-gray-500 transition-all duration-300 ease-in-out" required/>  
+
+                    <input type="text" placeholder="Confirm New Password" name="password" id="password" class="mt-16 w-60 h-16 text-graymid border-b-gray-700 border-b-2 bg-transparent focus:outline-none invalid:border-b-gray-500 text-sm text-center placeholder:text-gray-500 transition-all duration-300 ease-in-out" required/>
+
+                    <button type="submit" class="mt-14 w-44 h-28 rounded shadow-semi-sm active:shadow-in-semi-sm active:shadow-bright-sun duration-200">
+                        <h1 class="font-ringbearer flex justify-center items-center text-center text-lg h-[48px]">Change Password</h1>
+                    </button>
+                </div>
+            </form>
+        </div> 
+    </div>
+
+    <!-- footer start -->
+    <footer class="fixed bottom-0 left-0 right-0 mt-3 mb-3 text-center">
+        <h1 class="font-bold lg:text-3xl font-ringbearer text-[#A37651] text-stroke sm:text-2xl md:text-2xl">#Venture The Deep Within
+    </footer>
+    <!-- footer ends -->
+    <script src="/public/js/sidebar.js"></script>
+</body>
+</html>
