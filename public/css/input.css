@@ -1,0 +1,361 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ringbearer";
+    src: url("/public/assets/font/RINGM___.TTF");
+  }
+
+@font-face {
+    font-family: "Enchanted";
+    src: url("/public/assets/font/Enchanted Land.otf");
+  }
+
+@font-face {
+    font-family: "Vinque";
+    src: url("/public/assets/font/vinque rg.otf");
+  }
+
+@font-face {
+    font-family: "Blackcha";
+    src: url("/public/assets/font/BLKCHCRY.TTF");
+  }
+  
+@layer utilities {
+  .slickprev {
+    left: 50px;
+    z-index: 9;
+  }
+  .slicknext {
+    right: 75px;
+    z-index: 9;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .custom-carousel .owl-item.center img {
+    @apply transform scale-110 opacity-100;
+  }
+    
+  .custom-carousel .owl-item img {
+    @apply h-full w-full bg-contain;
+  }
+
+  .custom-card .owl-item.center img {
+    @apply transform scale-110 opacity-100;
+  }
+    
+  .custom-card .owl-item img {
+    @apply h-full max-w-full bg-contain;
+  }
+}
+
+.text-end {
+  justify-contain: flex-end;
+}
+
+.text-quota {
+  top: 230px;
+  right: 25px;
+}
+
+@media (max-width: 768px){
+  .text-quota {
+    top: 300px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 450px){
+  .text-quota {
+    top: 335px;
+  }
+}
+
+@media (max-width: 400px){
+  .text-quota {
+    top: 295px;
+  }
+}
+
+@media (max-width: 350px){
+  .text-quota {
+    top: 250px;
+  }
+}
+
+.mcard {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .mcard {
+    margin-bottom: 60px;
+  }
+}
+
+.custom-carousel .owl-dots {
+  display: none;
+}
+
+.custom-card .owl-dots {
+  display: none;
+}
+
+.owl-item.active.center img,
+.owl-item.active.center .choose-role {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.owl-item.active.center img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.owl-item.active.center .choose-role {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.owl-item.active img,
+.owl-item.active .choose-role {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.owl-item.active img {
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.owl-item.active .choose-role {
+  transform: translateY(200px) scale(0.9);
+  opacity: 1;
+}
+
+.owl-item img,
+.owl-item .choose-role {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.owl-item img {
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.owl-item .choose-role {
+  transform: translateY(200px) scale(0.9);
+  opacity: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+  
+.slick-prev:hover, .slick-next:hover {
+  opacity: 1;
+}
+  
+.slick-prev {
+  left: -50px;
+}
+  
+.slick-next {
+  right: -50px;
+}
+     
+.owl-item > div:after {
+  @apply absolute inset-0 flex items-center justify-center text-5xl font-bold text-white;
+}
+
+/* Sidebar */
+
+.sidebar.open {
+  width: 250px;
+}
+
+/* CSS */
+/* Untuk layar small-L (sm) */
+@media (max-width: 425px) {
+  .sidebar.open {
+    width: 155px;
+  }
+  .image-caas{
+    margin-top: 50px;
+  }
+  .deskripsi {
+    margin-top: 10px;
+  }
+
+  /* halaman announcement */
+  .paper {
+    width: 375px;
+    height: 700px;
+    padding-top: 60px;
+  }
+  .text-announce{
+    margin-top: 140px;
+  }
+  .announcement {
+    text-align: justify;
+  }
+  
+  /* halaman fix role cass */
+  .role {
+    height: 320px;
+    justify-content: center;
+  }
+  
+  /* warning change pass, logout */
+  .warning {
+    height: 200px;
+    width: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text-warning {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+  }
+  .text-wardeks {
+    font-size: 16px;
+    margin-top: 1.8rem;
+  }
+  .box-button-warning{
+    max-width: 130px;
+  }
+  .button-warning{
+    font-size: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: -25px;
+  }
+
+  /* halaman pilih shcedule */
+  .judul-tabel{
+    font-size: 20px;
+  }
+
+  /* warning fix jadwal caas */
+  .warning-jadwal{
+    height: 300px;
+    width: 380px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .text-warning-jadwal{
+    font-size: 21px;
+    margin-top: -7px;
+  }
+  .text-deksjad{
+    margin-top: -28px;
+  }
+  .box-button-warning-jadwal{
+    max-width: 170px;
+    margin-top: 3px;
+  }
+  .box-button-warjad{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+  }
+  
+  /* halaman fix schedule */
+  .text-fix-schedule{
+    font-size: 33px;
+  }
+  .text-fix-secjad{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Untuk layar small (sm) */
+@media (max-width: 640px) {
+  .sidebar.open {
+    width: 255px;
+  }
+  .deskripsi{
+    margin-top: 355px;
+  }
+}
+
+/* Untuk layar medium (md) */
+@media (max-width: 768px) {
+  .sidebar.open {
+    width: 285px;
+  }
+  .deskripsi{
+    margin-top: 360px;
+  }
+}
+
+/* Untuk layar besar (lg) */
+@media (max-width: 1024px) {
+  .deskripsi{
+    margin-top: 380px;
+  }
+}
+
+/* Untuk layar besar (xl) */
+@media (max-width: 1440px) {
+  .deskripsi{
+    margin-top: 380px;
+  }
+}
+
+.prof li a span {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.prof.open li a span {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.boxsidebar h1{
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.boxsidebar.open h1 {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.boxsidebar {
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.boxsidebar.open {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1s ease-in-out;
+}
