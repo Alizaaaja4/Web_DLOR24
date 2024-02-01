@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "welcome-dungeon": "url('/public/assets/homepage/dugbg1.png')",
-        "dark-dungeon": "url('/public/assets/dasboardcaas/dugbg2.png')",
+        "dark-dungeon": "url('/public/assets/dashboardcaas/dugbg2.png')",
       },
       boxShadow: {
         "semi-sm": "0px 0px 8px 2px rgba(0, 0, 0, 0.3)",
