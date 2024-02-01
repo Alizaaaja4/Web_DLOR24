@@ -9,9 +9,7 @@ module.exports = {
       },
       boxShadow: {
         "semi-sm": "0px 0px 8px 2px rgba(0, 0, 0, 0.3)",
-        "in-semi-sm": "inset 0px 0p x 8px 2px rgba(0, 0, 0, 0.3)",
-        "card-test1": "0px 8px 30px -7px rgba(201,223,240)",
-        "card-test2": "0 8px 20px -4px rgba(149,171,187)"
+        "in-semi-sm": "inset 0px 0p x 8px 2px rgba(0, 0, 0, 0.3)"
       },
       fontFamily: {
         'ringbearer': ['Ringbearer'],
@@ -78,11 +76,12 @@ module.exports = {
         // hover-true
         'green': '#166534',
         'hijau-gelap': '#0E131A',
-
-        'orange-vintage': '#A37651',
-        "gray-vintage": '#514D4D',
-        'yellow-vintage': '#E4C792',
-        'orange-button': '#AF9D8C'
+      },
+      screens:{
+        'mobile-L' : '425px',
+        'mobile-M' : '375px',
+        'tablet'   : '768px',
+        'laptop'   : '1024px',
       },
       cursor: {
         "sword": "url('/public/assets/cursor/sword.cur'), default",
@@ -91,4 +90,3 @@ module.exports = {
   },
   plugins: [],
 }
-
