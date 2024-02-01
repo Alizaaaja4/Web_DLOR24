@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @font-face {
+    font-family: "Ringbearer";
+    src: url("/public/assets/font/RINGM___.TTF");
+  }
+
+  @font-face {
+    font-family: "Enchanted";
+    src: url("/public/assets/font/Enchanted\ Land.otf");
+  }
+
+  @font-face {
+    font-family: "Vinque";
+    src: url("/public/assets/font/vinque\ rg.otf")
+  }
+
+  @font-face {
+    font-family: "Blackha";
+    src: url("/public/assets/font/BLKCHCRY.TTF");
+  }
+  
+  /* Sidebar */
+
+.sidebar.open {
+  width: 250px;
+}
+
+/* CSS */
+/* Untuk layar small-L (sm) */
+@media (max-width: 425px) {
+  .sidebar.open {
+    width: 155px;
+  }
+  .image-caas{
+    padding-top: 8px;
+  }
+  .deskripsi {
+    margin-top: 10px;
+  }
+
+  /* halaman announcement */
+  .paper {
+    width: 330px;
+    height: 570px;
+    padding-top: 40px;
+  }
+  .text-announce{
+    margin-top: 142px;
+  }
+  .announcement {
+    text-align: justify;
+  }
+  .button-schedule{
+    margin-top: 170px;
+  }
+  
+  /* halaman fix role cass */
+  .role {
+    height: 320px;
+    justify-content: center;
+  }
+  
+  /* warning change pass, logout */
+  .warning {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text-warning {
+    margin-top: 3px;
+    margin-bottom: 18px;
+  }
+  .text-wardeks {
+    font-size: 16px;
+  }
+  .box-button-warning{
+    margin-top: 8px;
+    max-width: 150px;
+  }
+  .button-warning{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+  }
+
+  /* halaman pilih shcedule */
+  .judul-tabel{
+    font-size: 20px;
+  }
+
+  /* warning fix jadwal caas */
+  .warning-jadwal{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .text-warning-jadwal{
+    margin-top: 3px;
+    margin-bottom: 18px;
+  }
+  .text-deksjad{
+    margin-top: 22px;
+  }
+  .box-button-warning-jadwal{
+    max-width: 170px;
+    margin-top: 3px;
+  }
+  .box-button-warjad{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+  }
+  
+  /* halaman fix schedule */
+  .text-fix-schedule{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .text-fix-secjad{
+    margin-bottom: 25px;
+  }
+  .text-fix-trijad{
+    font-size: 33px;
+  }
+}
+
+/* Untuk layar small (sm) */
+@media (max-width: 640px) {
+  .sidebar.open {
+    width: 255px;
+  }
+}
+
+/* Untuk layar medium (md) */
+@media (max-width: 768px) {
+  .sidebar.open {
+    width: 285px;
+  }
+  .deskripsi{
+    margin-top: 360px;
+  }
+}
+
+/* Untuk layar besar (lg) */
+@media (max-width: 1024px) {
+  .deskripsi{
+    margin-top: 380px;
+  }
+}
+
+/* Untuk layar besar (xl) */
+@media (max-width: 1440px) {
+  .deskripsi{
+    margin-top: 380px;
+  }
+}
+
+/* untuk layar besar (@4K) */
+@media (max-width: 2560px){
+  .deskripsi{
+    margin-top: 380px;
+  }
+}
+
+.prof li a span {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.prof.open li a span {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.boxsidebar h1{
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.boxsidebar.open h1 {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.boxsidebar {
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.boxsidebar.open {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 1s ease-in-out;
+}
+   
