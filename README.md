@@ -19,3 +19,6 @@ This website was created as a platform for the recruitment process of new member
 - **HTML, CSS, JavaScript:** These are the fundamental languages for building the structure, styling, and interactivity of web pages. HTML provides the structure, CSS adds styling, and JavaScript enhances interactivity.
   
 - **Tailwind CSS:** Tailwind CSS is a utility-first CSS framework used for styling the frontend of this website. It allows for rapid development and easy customization of styles through utility classes.
+
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=808080&height=120&section=footer"/>
